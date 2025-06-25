@@ -16,7 +16,7 @@ A fully automated, containerized Laravel application to scrape, store, display, 
 
 ```
 $ git clone https://github.com/pankrashin/h_da-job-scraper.git
-cd h_da-job-scraper
+$ cd h_da-job-scraper
 ```
 
 ### Edit .env
