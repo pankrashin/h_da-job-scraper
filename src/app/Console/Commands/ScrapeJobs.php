@@ -82,7 +82,7 @@ class ScrapeJobs extends Command
                             'logo_url'     => $node->filter('.jwtpl-hili-col1 img')->attr('src'),
                         ];
 
-                        $normalizedString = strtolower(trim($jobData['company']) . trim($jobData['title']) . trim($jobData['location']));
+                        $normalizedString = strtolower(trim($jobData['company']) . trim($jobData['title']) . trim($jobData['location']) . $formattedDate);
                         $hash = sha1($normalizedString);
                         $jobData['unique_hash'] = $hash;
 
