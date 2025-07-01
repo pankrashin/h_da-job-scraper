@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('company');
             $table->string('location');
             $table->date('posting_date');
-            $table->string('link');
+            $table->text('link');
             $table->text('logo_url')->nullable();
             $table->string('unique_hash')->unique();
             $table->timestamps();
